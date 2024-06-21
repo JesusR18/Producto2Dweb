@@ -1,0 +1,44 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.caja{
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+}
+
+
+header, footer{
+    background: rgb(255, 193, 69);
+    display: block;
+    min-height: 10%;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: yellow;
+}
+
+nav {
+    background: #CCF;
+    flex: 20%;
+}
+
+article{
+    background: rgb(188, 255, 188);
+    flex: 60%;
+}
+
+aside{
+    background: #CCF;
+    flex: 20%;
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
