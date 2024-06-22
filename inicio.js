@@ -1,22 +1,22 @@
-function validateForm() {
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const username = document.getElementById("username").value;
+      function validateForm() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const username = document.getElementById("username").value;
 
-    if (name === "" || username === "") {
-      alert("Por favor, complete todos los campos");
-      return false;
-    }
+        if (name === "" || username === "") {
+          alert("Por favor, complete todos los campos");
+          return false;
+        }
 
-    if (!validateEmail(email)) {
-      alert("El correo electrónico es incorrecto. Debe contener el símbolo de arroba (@)");
-      return false;
-    }
+        if (!validateEmail(email)) {
+          alert("El formato de correro elctronico es incorrecto");
+          return false;
+        }
 
-    return true;
-  }
+        return true;
+      }
 
-  function validateEmail(email) {
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    return emailRegex.test(email);
-  }
+      function validateEmail(email) {
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return emailRegex.test(email);
+      }
